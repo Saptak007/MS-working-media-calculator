@@ -1,0 +1,52 @@
+//
+//  main.c
+//  MS media calculator
+//
+//  Created by Saptak Sarkar on 13/02/23.
+//
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Welcome to Saptak's MS media calculator\nThe software references the book Plant Biotechnology by H.S.Chawla\n");
+    double Sucrose = 30;
+    double Macronutrient = 100;
+    double Micronutrient = 10;
+    double FeEdTaNa = 40;
+    double Nicotinic_acid = 1;
+    double Pyridoxin = 1;
+    double Thiamine_hcl = 0.2;
+    double Glycine = 4;
+    double Inositol = 100;
+    double Agar = 8;
+    double amount;
+    printf("Enter the amount of MS media you would like to prepare (in ml)\n");
+    scanf("%lf", &amount);
+    printf("------------------------------------------------------------------------");
+    double a = (Sucrose / 1000) * amount;
+    double b = (Macronutrient / 1000) * amount;
+    double c = (Micronutrient / 1000) * amount;
+    double d = (FeEdTaNa / 1000) * amount;
+    double e = (Nicotinic_acid / 1000) * amount;
+    double f = (Pyridoxin / 1000) * amount;
+    double g = (Thiamine_hcl / 1000) * amount;
+    double h = (Glycine / 1000) * amount;
+    double i = (Inositol / 1000) * amount;
+    double j = (Agar / 1000) * amount;
+    printf("First add some quantiity of water to help the constituents mix well, e.g 400ml for preparing 1000ml of MS media\n\n");
+    printf("Sucrose = %.3f gm\n", a);
+    printf("Macronutrient = %.3f ml from stock solution\n", b);
+    printf("Micronutrient = %.3f ml from stock solution\n", c);
+    printf("FeEdTaNa = %.3f mg add fresh\n", d);
+    printf("Nicotinic_acid = %.3f ml from stock solution\n", e);
+    printf("Pyridoxin = %.3f ml from stock solution\n", f);
+    printf("Thiamine_hcl = %.3f ml from stock solution\n", g);
+    printf("Glycine = %.3f ml\n", h);
+    printf("Inositol = %.3f mg from stock solution\n", i);
+    printf("Agar = %.3f gm\n\n", j);
+    printf("Fill up with distilled water to reach the final value, e.g if you got 280ml after putting all the constituents, add 20ml distilled water to make it complete 300ml, considering your aim was to prepare 300ml media.\n");
+    printf("------------------------------------------------------------------------\n");
+
+    return 0;
+}
